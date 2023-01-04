@@ -12,22 +12,22 @@ export default class SlidingWindow {
     console.log(
       "SlidingWindow",
       "maxSubarraySum([1,2,5,2,8,1,5], 4) => 17",
-      "result: " + this.maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 4)
+      "result: " + this.maxSubarraySumRefactor([1, 2, 5, 2, 8, 1, 5], 4)
     );
     console.log(
       "SlidingWindow",
       "maxSubarraySum([4,2,1,6], 1) => 6",
-      "result: " + this.maxSubarraySum([4, 2, 1, 6], 1)
+      "result: " + this.maxSubarraySumRefactor([4, 2, 1, 6], 1)
     );
     console.log(
       "SlidingWindow",
       "maxSubarraySum([4,2,1,6,2], 4) => 13",
-      "result: " + this.maxSubarraySum([4, 2, 1, 6, 2], 4)
+      "result: " + this.maxSubarraySumRefactor([4, 2, 1, 6, 2], 4)
     );
     console.log(
       "SlidingWindow",
       "maxSubarraySum([], 4) => null",
-      "result: " + this.maxSubarraySum([], 4)
+      "result: " + this.maxSubarraySumRefactor([], 4)
     );
   }
 
@@ -64,5 +64,24 @@ export default class SlidingWindow {
     }
 
     return maxSum;
+  }
+
+  maxSubarraySumRefactor(arr1 = [], maxLength = 0) {
+    let maxSum = 0;
+    let tempMaxSum = 0;
+
+    if (arr1.length < maxLength) {
+      return null;
+    }
+
+    for (let i = 0; i < maxLength; i++) {
+      maxSum += arr1[i];
+    }
+    tempMaxSum = maxSum;
+    // [1,2,3,4,5,6] , 3
+    for (let i = maxLength; i < arr1.length; i++) {
+      tempMaxSum = tempMaxSum - arr1[i - maxLength] + arr1[i];
+      maxSum = Math.max(tempMaxSum, maxSum);
+    }
   }
 }
