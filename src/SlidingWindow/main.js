@@ -41,7 +41,7 @@ export default class SlidingWindow {
     // keep max sum
     // if counter is equal to maxlength start again keeping maxSum to compare with the next values
     if (arr1.length < maxLength) {
-      return;
+      return null;
     }
     tempMaxSum = arr1[leftPointer];
     while (leftPointer <= arr1.length) {
@@ -49,15 +49,20 @@ export default class SlidingWindow {
         if (tempMaxSum > maxSum) {
           maxSum = tempMaxSum;
         }
-        counter = 0;
+        counter = 1;
         leftPointer++;
-        rightPointer = leftPointer;
+        tempMaxSum = arr1[leftPointer];
+        rightPointer = leftPointer + 1;
       } else {
+        if (arr1[rightPointer] === undefined) {
+          return maxSum;
+        }
         tempMaxSum = tempMaxSum + arr1[rightPointer];
         rightPointer++;
+        counter++;
       }
     }
 
-    return;
+    return maxSum;
   }
 }
