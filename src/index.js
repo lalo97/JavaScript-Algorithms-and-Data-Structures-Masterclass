@@ -7,6 +7,8 @@ import DivideAndConquer from "./DivideAndConquer/main";
 import SameFrequency from "./Challenges/Section6/FrequencyCounter/SameFrequency";
 import MultiplePointers from "./Challenges/Section6/FrequencyCounter/MultiplePointers";
 import AveragePair from "./Challenges/Section6/MultiplePointers/AveragePair";
+import IsSubsequence from "./Challenges/Section6/MultiplePointers/IsSubsequence";
+import MaxSubarraySum from "./Challenges/Section6/SlidingWindow/MaxSubarraySum";
 
 function main() {
   // new FrequencyCounterPattern();
@@ -17,7 +19,9 @@ function main() {
   // new DivideAndConquer();
   // new SameFrequency();
   // new MultiplePointers();
-  new AveragePair()
+  // new AveragePair();
+  // new IsSubsequence();
+  new MaxSubarraySum();
 }
 
 main();
