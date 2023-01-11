@@ -8,7 +8,10 @@ import SameFrequency from "./Challenges/Section6/FrequencyCounter/SameFrequency"
 import MultiplePointers from "./Challenges/Section6/FrequencyCounter/MultiplePointers";
 import AveragePair from "./Challenges/Section6/MultiplePointers/AveragePair";
 import IsSubsequence from "./Challenges/Section6/MultiplePointers/IsSubsequence";
+import * as MultiplePointersMinSubArrayLen from "./Challenges/Section6/MultiplePointers/MinSubArrayLen";
 import MaxSubarraySum from "./Challenges/Section6/SlidingWindow/MaxSubarraySum";
+import MinSubArrayLen from "./Challenges/Section6/SlidingWindow/MinSubArrayLen";
+import FindLongestSubstring from "./Challenges/Section6/SlidingWindow/FindLongestSubstring";
 
 function main() {
   // new FrequencyCounterPattern();
@@ -21,7 +24,9 @@ function main() {
   // new MultiplePointers();
   // new AveragePair();
   // new IsSubsequence();
-  new MaxSubarraySum();
+  // new MaxSubarraySum();
+  // new MinSubArrayLen();
+  new FindLongestSubstring();
 }
 
 main();
