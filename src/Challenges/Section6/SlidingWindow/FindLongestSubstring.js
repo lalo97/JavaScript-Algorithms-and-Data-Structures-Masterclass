@@ -66,5 +66,7 @@ export default class FindLongestSubstring {
         right++;
       }
     }
+
+    return longestSubstring;
   }
 }
