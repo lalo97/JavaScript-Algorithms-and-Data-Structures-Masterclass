@@ -20,9 +20,11 @@ function main() {
   // Section6.FindLongestSubstring()
   // Section6.MaxSubarraySum()
   // Section6.MinSubArrayLen()
-
   // Recursion.factorial();
   // Recursion.power();
+  // Recursion.productOfArray();
+  // Recursion.recursiveRange();
+  Recursion.fib();
 }
 
 main();

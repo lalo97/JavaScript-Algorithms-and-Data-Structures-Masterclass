@@ -1,5 +1,8 @@
 import Factorial from "./Factorial";
+import Fibonacci from "./Fibonacci";
 import Power from "./Power";
+import ProductOfArray from "./ProductOfArray";
+import RecursiveRange from "./RecursiveRange";
 
 export default class Recursion {
   // write a function called sumZero with accepts a "sorted" array of integer.
@@ -15,4 +18,15 @@ export default class Recursion {
     new Factorial();
   }
 
+  static productOfArray() {
+    new ProductOfArray();
+  }
+
+  static recursiveRange() {
+    new RecursiveRange();
+  }
+
+  static fib() {
+    new Fibonacci();
+  }
 }
