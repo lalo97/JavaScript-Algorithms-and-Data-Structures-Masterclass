@@ -4,6 +4,8 @@ import SlidingWindow from "./SlidingWindow/main";
 import DivideAndConquer from "./DivideAndConquer/main";
 import Recursion from "./Recursion/main";
 import Section6 from "./Challenges/Section6/Section6";
+import Section9 from "./Challenges/Section9/Section9";
+import SearchAlgorithms from "./SearchAlgorithms/main";
 
 function main() {
   // FrequencyCounterPattern.firstExample();
@@ -24,7 +26,15 @@ function main() {
   // Recursion.power();
   // Recursion.productOfArray();
   // Recursion.recursiveRange();
-  Recursion.fib();
+  // Recursion.fib();
+  // Section9.reverse();
+  // Section9.isPalindrome();
+  // Section9.someRecursive();
+  // Section9.flatten();
+  // Section9.capitalizeFirst();
+  // Section9.nestedEvenSum();
+  // SearchAlgorithms.linearSearch();
+  SearchAlgorithms.binarySearch();
 }
 
 main();
